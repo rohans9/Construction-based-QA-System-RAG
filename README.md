@@ -63,7 +63,6 @@ Quick run (Colab-style):
 4) Ask questions with `rag.answer("your question", k=3)`. The prompt enforces context-only answers and to return "Information not found" when unsupported.
 
 Tips:
-- Keep docs text-based (OCR scans first).
 - If you change docs, re-run chunking + indexing cells before querying.
 - GPU is assumed for the notebook; drop to CPU by removing `device_map="auto"` (will be slower).
 - If you have larger/faster GPUs, swap in bigger open-source models (higher parameter counts) for better quality. I stayed with sub-1B models due to limited GPU.
