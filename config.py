@@ -6,18 +6,12 @@ load_dotenv()
 
 
 def get_openai_client() -> OpenAI:
-    """
-    Return a configured OpenAI client.
-
-    Requires OPENAI_API_KEY in your environment or .env file.
-    """
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         raise EnvironmentError(
             "OPENAI_API_KEY is not set. Please add it to your environment or .env file."
         )
 
-    # The OpenAI() client will read OPENAI_API_KEY from the environment
     return OpenAI()
 
 

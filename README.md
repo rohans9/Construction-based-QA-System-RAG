@@ -1,5 +1,8 @@
 # Construction based QA System (RAG)
 
+---
+
+## Frontier Model
 Lightweight Retrieval-Augmented Generation (RAG) demo that:
 - Chunks local PDFs
 - Builds OpenAI embeddings + FAISS index
